@@ -14,6 +14,7 @@ RUN \
 
 RUN \
     echo "Defaults:root !env_reset" >/etc/sudoers.d/tester_extra && \
+    echo "Defaults:root !secure_path" >/etc/sudoers.d/tester_extra && \
     echo "nobody ALL=(ALL) NOPASSWD:ALL" >>/etc/sudoers.d/tester_extra
 
 RUN \
