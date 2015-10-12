@@ -5,7 +5,7 @@ RUN \
 	export DEBIAN_FRONTEND=noninteractive && \
 	apt-key update && \
 	apt-get -y update && \
-	apt-get install -y curl
+	apt-get install -y curl psmisc
     
 RUN \
     curl -L https://github.com/sstephenson/bats/archive/v0.4.0.tar.gz | tar xzv -C /tmp && \
